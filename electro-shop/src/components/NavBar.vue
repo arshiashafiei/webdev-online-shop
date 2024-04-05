@@ -89,9 +89,17 @@
         </button>
       </div>
     </div>
-  </template>
+</template>
 
-  <style scoped>
+<script>
+    import { defineComponent } from "vue";
+
+    export default defineComponent({
+    name: "NavBar",
+    });
+</script>
+
+<style scoped>
     .logo-icon {
       height: 58px;
       width: 58px;
@@ -589,12 +597,4 @@
         box-sizing: border-box;
       }
     }
-  </style>
-  
-  <script>
-  import { defineComponent } from "vue";
-
-  export default defineComponent({
-    name: "NavBar",
-  });
-  </script>
+</style>
