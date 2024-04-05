@@ -3,7 +3,7 @@
       <section class="footer-child" />
       <section class="frame-group">
         <div class="logo-text-parent">
-          <img class="logo-text1" loading="lazy" alt="" src="/logo--text1.svg" />
+          <img class="logo-text1" loading="lazy" alt="" src="../assets/logo-white.svg" />
           <div class="call-parent">
             <div class="call">
               <div class="visa-icon">
@@ -11,7 +11,7 @@
                   class="huge-iconcommunicationoutlin"
                   loading="lazy"
                   alt=""
-                  src="/hugeiconcommunicationoutlinecalling.svg"
+                  src="../assets/calling.svg"
                 />
               </div>
               <div class="google-pay-icon">(316) 555-0116</div>
@@ -24,7 +24,7 @@
                     class="your-email-label"
                     loading="lazy"
                     alt=""
-                    src="/vector-3014.svg"
+                    src="../assets/gmail.svg"
                   />
                 </div>
               </div>
@@ -35,7 +35,7 @@
                 class="huge-icondeviceoutlinelocat"
                 loading="lazy"
                 alt=""
-                src="/hugeicondeviceoutlinelocation.svg"
+                src="../assets/location.svg"
               />
               <div class="parker-rd-allentown-container">
                 <p class="parker-rd-allentown">4140 Parker Rd. Allentown,</p>
@@ -80,7 +80,7 @@
                   <img
                     class="google-pay-payment-method"
                     alt=""
-                    src="/vector-3014.svg"
+                    src="../assets/gmail.svg"
                   />
                 </div>
                 <div class="your-email">Your Email</div>
@@ -88,7 +88,7 @@
               <img
                 class="huge-iconarrowsoutlinearrow"
                 alt=""
-                src="/hugeiconarrowsoutlinearrowright@2x.png"
+                src="../assets/arrow-right.svg"
               />
             </div>
           </div>
@@ -103,31 +103,31 @@
                 class="payment-methodvisa-icon"
                 loading="lazy"
                 alt=""
-                src="/payment-methodvisa.svg"
+                src="../assets/visa.svg"
               />
               <img
                 class="payment-methodmastercard-icon"
                 loading="lazy"
                 alt=""
-                src="/payment-methodmastercard.svg"
+                src="../assets/mastercard.svg"
               />
               <img
                 class="payment-methodgooglepay-icon"
                 loading="lazy"
                 alt=""
-                src="/payment-methodgooglepay.svg"
+                src="../assets/googlepay.png"
               />
               <img
                 class="payment-methodamex-icon"
                 loading="lazy"
                 alt=""
-                src="/payment-methodamex.svg"
+                src="../assets/amex.svg"
               />
               <img
                 class="payment-methodpaypal-icon"
                 loading="lazy"
                 alt=""
-                src="/payment-methodpaypal.svg"
+                src="../assets/paypal.svg"
               />
             </div>
             <div class="electro-all-rights">
@@ -139,19 +139,19 @@
               class="huge-iconsocialsolidfaceboo"
               loading="lazy"
               alt=""
-              src="/hugeiconsocialsolidfacebook.svg"
+              src="../assets/facebook.svg"
             />
             <img
               class="huge-iconsocialsolidinstagr"
               loading="lazy"
               alt=""
-              src="/hugeiconsocialsolidinstagram@2x.png"
+              src="../assets/instagram.svg"
             />
             <img
               class="huge-iconsocialsolidtwitter"
               loading="lazy"
               alt=""
-              src="/hugeiconsocialsolidtwitter.svg"
+              src="../assets/twitter.svg"
             />
           </div>
         </div>
