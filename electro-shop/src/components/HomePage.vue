@@ -129,7 +129,6 @@
       justify-content: flex-start;
       gap: var(--gap-19xl);
       flex-shrink: 0;
-      debug_commit: f6aba90;
     }
     .highlighted {
       width: 544px;
@@ -169,7 +168,6 @@
       position: relative;
       min-width: 421px;
       flex-shrink: 0;
-      debug_commit: f6aba90;
     }
     .highlighted-parent {
       width: 1191px;
