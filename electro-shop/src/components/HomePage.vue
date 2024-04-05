@@ -29,7 +29,7 @@
             class="young-handsome-happy-smiling-m-icon"
             loading="lazy"
             alt=""
-            src="/younghandsomehappysmilingmandancinglisteningmusicheadphonesisolatedwhitestudiowall-1@2x.png"
+            src="../assets/man.png"
           />
         </div>
       </div>
