@@ -1,4 +1,44 @@
-/* color palette from <https://github.com/vuejs/theme> */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+body {
+  margin: 0;
+  line-height: normal;
+}
+:root {
+  /* fonts */
+  --body-1-regular: Montserrat;
+
+  /* font sizes */
+  --body-1-regular-size: 16px;
+  --label-bold-size: 11px;
+
+  /* Colors */
+  --white-500: #fff;
+  --primary-500: #1c4e8e;
+  --color-steelblue: #4275b5;
+  --dark-500: #101316;
+  --dark-dark-20: rgba(16, 19, 22, 0.2);
+  --gray-gray-20: rgba(165, 169, 172, 0.2);
+  --gray-gray-5: rgba(165, 169, 172, 0.05);
+
+  /* Gaps */
+  --gap-xl: 20px;
+  --gap-11xl: 30px;
+  --gap-3xs: 10px;
+
+  /* Paddings */
+  --padding-xl: 20px;
+  --padding-56xl: 75px;
+  --padding-3xs: 10px;
+  --padding-10xs: 3px;
+  --padding-mini: 15px;
+
+  /* Border radiuses */
+  --br-3xs: 10px;
+  --br-8xs: 5px;
+}
+
+
+/* color palette from <https://github.com/vuejs/theme>
 :root {
   --vt-c-white: #ffffff;
   --vt-c-white-soft: #f8f8f8;
@@ -22,7 +62,7 @@
 }
 
 /* semantic color variables for this project */
-:root {
+/* :root {
   --color-background: var(--vt-c-white);
   --color-background-soft: var(--vt-c-white-soft);
   --color-background-mute: var(--vt-c-white-mute);
@@ -71,4 +111,4 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
+} */ 
