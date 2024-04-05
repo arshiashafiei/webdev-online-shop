@@ -1,13 +1,13 @@
 <script setup>
 import Navbar from './components/Navbar.vue'
-import Footer from './components/Footer.vue'
+import Footbar from './components/Footbar.vue'
 </script>
 
 <template>
   <div id="app">
     <main>
       <Navbar />
-      <Footer />
+      <Footbar />
     </main>
   </div>
 </template>
