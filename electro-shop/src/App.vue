@@ -1,5 +1,6 @@
 <script setup>
 import Navbar from './components/Navbar.vue'
+import HomePage from './components/HomePage.vue'
 import Footbar from './components/Footbar.vue'
 </script>
 
@@ -7,6 +8,7 @@ import Footbar from './components/Footbar.vue'
   <div id="app">
     <main>
       <Navbar />
+      <HomePage />
       <Footbar />
     </main>
   </div>
