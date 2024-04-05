@@ -95,7 +95,7 @@
     import { defineComponent } from "vue";
 
     export default defineComponent({
-    name: "NavBar",
+    name: "Navbar",
     });
 </script>
 

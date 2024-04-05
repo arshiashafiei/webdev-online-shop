@@ -1,11 +1,11 @@
 <script setup>
-import NavBar from './components/NavBar.vue'
+import Navbar from './components/Navbar.vue'
 </script>
 
 <template>
   <div id="app">
     <main>
-      <NavBar />
+      <Navbar />
     </main>
   </div>
 </template>
