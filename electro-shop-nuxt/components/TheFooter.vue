@@ -20,6 +20,7 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="account-links">
                         <h3 class="title">Information</h3>
                         <a href="#" class="link">My Account</a>
@@ -28,6 +29,7 @@
                         <a href="#" class="link">My Wishlist</a>
                         <a href="#" class="link">Checkout</a>
                     </div>
+
                     <div class="service-links">
                         <h3 class="title">Service</h3>
                         <a href="#" class="link">About Us</a>
@@ -65,7 +67,7 @@
                         <img src="/icons/amex-icon.svg" alt="Amex" class="pay-icon" />
                         <img src="/icons/paypal-icon.svg" alt="Paypal" class="pay-icon" />
                     </div>
-                    
+
                     <div class="copyright">&copy;2023 Electro All Rights are reserved️</div>
 
                     <div class="social-icons">
@@ -82,90 +84,90 @@
   
 <style scoped>
     .footer {
-    display: flex;
-    justify-content: center;
+        display: flex;
+        justify-content: center;
     }
 
     .footer-top {
-    background-color: #1c4e8e;
-    width: 100%;
-    padding: 26px 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+        background-color: #1c4e8e;
+        width: 100%;
+        padding: 26px 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .footer-content {
-    max-width: 1140px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+        max-width: 1140px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
     }
 
     .footer-info {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    font-size: 16px;
-    color: #fff;
-    font-weight: 400;
-    line-height: 30px;
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        font-size: 16px;
+        color: #fff;
+        font-weight: 400;
+        line-height: 30px;
     }
 
     .contact-info {
-    display: flex;
-    flex-direction: column;
+        display: flex;
+        flex-direction: column;
     }
 
     .logo {
-    width: 203px;
-    max-width: 100%;
-    aspect-ratio: 5;
-    object-fit: auto;
-    object-position: center;
+        width: 203px;
+        max-width: 100%;
+        aspect-ratio: 5;
+        object-fit: auto;
+        object-position: center;
     }
 
     .phone-number,
     .email,
     .address {
-    display: flex;
-    gap: 10px;
-    margin-top: 16px;
+        display: flex;
+        gap: 10px;
+        margin-top: 16px;
     }
 
     .icon {
-    width: 24px;
-    aspect-ratio: 1;
-    object-fit: auto;
-    object-position: center;
-    margin: auto 0;
+        width: 24px;
+        aspect-ratio: 1;
+        object-fit: auto;
+        object-position: center;
+        margin: auto 0;
     }
 
     .pay-icon {
-    width: 36px;
-    aspect-ratio: 1;
-    object-fit: auto;
-    object-position: center;
-    margin: auto 0;
+        width: 36px;
+        aspect-ratio: 1;
+        object-fit: auto;
+        object-position: center;
+        margin: auto 0;
     }
 
     .account-links,
     .service-links {
-    display: flex;
-    flex-direction: column;
+        display: flex;
+        flex-direction: column;
     }
 
     .title {
-    font-family: Montserrat, sans-serif;
-    font-weight: 700;
-    margin-bottom: 10px;
+        font-family: Montserrat, sans-serif;
+        font-weight: 700;
+        margin-bottom: 10px;
     }
 
     .link {
-    font-family: Montserrat, sans-serif;
-    margin-top: 10px;
-    color: #fff;
-    text-decoration: none;
+        font-family: Montserrat, sans-serif;
+        margin-top: 10px;
+        color: #fff;
+        text-decoration: none;
     }
 
     .subscribe-section {
