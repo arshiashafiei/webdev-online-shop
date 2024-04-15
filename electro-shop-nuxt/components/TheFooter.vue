@@ -28,6 +28,14 @@
                         <a href="#" class="link">My Wishlist</a>
                         <a href="#" class="link">Checkout</a>
                     </div>
+                    <div class="service-links">
+                        <h3 class="title">Service</h3>
+                        <a href="#" class="link">About Us</a>
+                        <a href="#" class="link">Careers</a>
+                        <a href="#" class="link">Delivery Information</a>
+                        <a href="#" class="link">Privacy Policy</a>
+                        <a href="#" class="link">Terms &amp; Conditions</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -107,7 +115,8 @@
     margin: auto 0;
     }
 
-    .account-links {
+    .account-links,
+    .service-links {
     display: flex;
     flex-direction: column;
     }
