@@ -20,6 +20,14 @@
                             </div>
                         </div>
                     </div>
+                    <div class="account-links">
+                        <h3 class="title">Information</h3>
+                        <a href="#" class="link">My Account</a>
+                        <a href="#" class="link">Login</a>
+                        <a href="#" class="link">My Cart</a>
+                        <a href="#" class="link">My Wishlist</a>
+                        <a href="#" class="link">Checkout</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -33,7 +41,7 @@
     }
 
     .footer-top {
-    background-color: var(--Primary-500, #1c4e8e);
+    background-color: #1c4e8e;
     width: 100%;
     padding: 26px 60px;
     display: flex;
@@ -59,7 +67,7 @@
     justify-content: space-between;
     gap: 20px;
     font-size: 16px;
-    color: var(--White-500, #fff);
+    color: #fff;
     font-weight: 400;
     line-height: 30px;
     }
@@ -97,5 +105,23 @@
     object-fit: auto;
     object-position: center;
     margin: auto 0;
+    }
+
+    .account-links {
+    display: flex;
+    flex-direction: column;
+    }
+
+    .title {
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    margin-bottom: 10px;
+    }
+
+    .link {
+    font-family: Montserrat, sans-serif;
+    margin-top: 10px;
+    color: #fff;
+    text-decoration: none;
     }
 </style>
