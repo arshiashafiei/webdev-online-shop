@@ -1,5 +1,5 @@
 <template>
-    <b-container fluid>
+    <div class="footer">
         <div class="footer-top">
             <div class="footer-content">
                 <div class="footer-info">
@@ -54,9 +54,30 @@
                         </form>
                     </div>
                 </div>
+
+                <div class="footer-divider"></div>
+
+                <div class="footer-bottom">
+                    <div class="pay-icons">
+                        <img src="/icons/visa-icon.svg" alt="Visa" class="pay-icon" />
+                        <img src="/icons/mastercard-icon.svg" alt="MasterCard" class="pay-icon" />
+                        <img src="/icons/googlepay-icon.svg" alt="GooglePay" class="pay-icon" />
+                        <img src="/icons/amex-icon.svg" alt="Amex" class="pay-icon" />
+                        <img src="/icons/paypal-icon.svg" alt="Paypal" class="pay-icon" />
+                    </div>
+                    
+                    <div class="copyright">&copy;2023 Electro All Rights are reserved️</div>
+
+                    <div class="social-icons">
+                        <a href="#"><img src="/icons/facebook-icon.svg" alt="Facebook icon" class="icon" /></a>
+                        <a href="#"><img src="/icons/instagram-icon.svg" alt="Instagram icon" class="icon" /></a>
+                        <a href="#"><img src="/icons/twitter-icon.svg" alt="Twitter icon" class="icon" /></a>
+                    </div>
+                </div>
+
             </div>
         </div>
-    </b-container>
+    </div>
 </template>
   
 <style scoped>
@@ -114,6 +135,14 @@
 
     .icon {
     width: 24px;
+    aspect-ratio: 1;
+    object-fit: auto;
+    object-position: center;
+    margin: auto 0;
+    }
+
+    .pay-icon {
+    width: 36px;
     aspect-ratio: 1;
     object-fit: auto;
     object-position: center;
@@ -193,5 +222,37 @@
         border: none;
         cursor: pointer;
         padding: 0;
+    }
+
+    .footer-divider {
+        height: 1px;
+        background-color: rgba(165, 169, 172, 0.2);
+        margin-top: 64px;
+    }
+
+    .footer-bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        margin-top: 16px;
+        width: 100%;
+    }
+
+    .copyright {
+        color: #fff;
+        text-align: center;
+        flex-grow: 1;
+        font: 400 16px/187.5% Montserrat, sans-serif;
+    }
+
+    .social-icons {
+        display: flex;
+        gap: 20px;
+    }
+
+    .pay-icons {
+        display: flex;
+        gap: 10px;
     }
 </style>
