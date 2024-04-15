@@ -36,6 +36,23 @@
                         <a href="#" class="link">Privacy Policy</a>
                         <a href="#" class="link">Terms &amp; Conditions</a>
                     </div>
+
+                    <div class="subscribe-section">
+                        <h3 class="title">Subscribe</h3>
+                        <p class="description">
+                            Enter your email below to be the first to know about new collections.
+                        </p>
+                        <form class="subscribe-form">
+                            <div class="input-wrapper">
+                                <img src="/icons/mail-icon.svg" alt="Email icon" class="icon" />
+                                <label for="email" class="visually-hidden">Your Email</label>
+                                <input type="email" id="email" placeholder="Your Email" class="email-input" />
+                            </div>
+                            <button type="submit" class="submit-btn">
+                                <img src="/icons/arrow-right-icon.svg" alt="Send icon" class="icon" />
+                            </button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
@@ -57,12 +74,6 @@
     justify-content: center;
     }
 
-    @media (max-width: 991px) {
-    .footer-top {
-        padding: 0 20px;
-    }
-    }
-
     .footer-content {
     max-width: 1140px;
     width: 100%;
@@ -78,12 +89,6 @@
     color: #fff;
     font-weight: 400;
     line-height: 30px;
-    }
-
-    @media (max-width: 991px) {
-    .footer-info {
-        flex-wrap: wrap;
-    }
     }
 
     .contact-info {
@@ -132,5 +137,61 @@
     margin-top: 10px;
     color: #fff;
     text-decoration: none;
+    }
+
+    .subscribe-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .description {
+        font-family: Montserrat, sans-serif;
+        margin-top: 10px;
+    }
+
+    .subscribe-form {
+        background-color: var(--gray-gray-10, rgba(165, 169, 172, 0.1));
+        border-radius: 10px;
+        padding: 13px 16px;
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .input-wrapper {
+        display: flex;
+        gap: 10px;
+    }
+
+    .visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+    }
+
+    .email-input {
+        font-family: Montserrat, sans-serif;
+        border: none;
+        background: transparent;
+        color: var(--White-500, #fff);
+    }
+
+    .email-input::placeholder {
+        color: var(--White-500, #fff);
+        opacity: 1;
+    }
+
+    .submit-btn {
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 0;
     }
 </style>
