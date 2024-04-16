@@ -1,5 +1,8 @@
 <template>
-  <Tutorial/>
+  <div>
+    <Tutorial/>
+    <BestSeller/>
+  </div>
 </template>
 
 <script>
