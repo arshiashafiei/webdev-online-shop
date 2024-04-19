@@ -1,6 +1,25 @@
 <template>
     <b-container>
       <b-row>
+        <b-col>
+          <h2 class="title">Our Bestseller Products</h2>
+        </b-col>
+        <b-col>
+          <b-nav align="right" class="nav">
+            <b-nav-item class="active">
+              <div class="d-flex flex-column">
+                New
+                <span class="underline"></span>
+              </div>
+              
+            </b-nav-item>
+            <b-nav-item>Featured</b-nav-item>
+            <b-nav-item>Top Rated</b-nav-item>
+          </b-nav>
+        </b-col>
+      </b-row>
+
+      <b-row>
         <b-col cols="12" lg="4">
           <div class="d-flex flex-column">
             <div class="product-name">Apple iPad Pro <br />Wi-Fi</div>
@@ -18,6 +37,7 @@
                       <b-img fluid :src="item.image" alt="Product image" />
                     </div>
                   </div>
+                  <div class="product-name">{{ item.name }}</div>
                   <div>
                     <b-icon icon="star-fill" class="star-icon"></b-icon>
                     <b-icon icon="star-fill" class="star-icon"></b-icon>
@@ -25,7 +45,6 @@
                     <b-icon icon="star-fill" class="star-icon"></b-icon>
                     <b-icon icon="star" class="star-icon"></b-icon>
                   </div>
-                  <div class="product-name">{{ item.name }}</div>
                   <div class="product-price">${{ item.price }}</div>
             </b-col>
           </b-row>
@@ -67,7 +86,7 @@
     width: 310px;
     margin-top: 12px;
   }
-  
+
   .product-price {
     font-family: Montserrat, sans-serif;
     font-weight: 400;
@@ -78,5 +97,24 @@
     .product-price {
       margin-bottom: 40px;
     }
+  }
+
+  .active {
+    color: #1c4e8e;
+  }
+
+  .underline {
+    height: 1px;
+    background-color: #1c4e8e;
+  }
+
+  .nav {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 150%;
+  }
+  
+  .title {
+    font: 700 30px/140% Montserrat, sans-serif;
   }
 </style>
