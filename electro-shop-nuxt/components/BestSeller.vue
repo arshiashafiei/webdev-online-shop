@@ -24,7 +24,7 @@
           <div class="d-flex flex-column">
             <div class="product-name">Apple iPad Pro <br />Wi-Fi</div>
             <div class="product-price">$1520</div>
-            <div>
+            <div class="ml-3 mt-3">
               <b-img fluid src="/images/apple-ipad-pro.png" alt="Apple iPad Pro Wi-Fi" />
             </div>
           </div>
@@ -33,19 +33,19 @@
           <b-row>
             <b-col cols="12" md="6" lg="4" v-for="item in items" :key="item">
               <div class="d-flex flex-column mb-4">
-                    <div class="">
-                      <b-img fluid :src="item.image" alt="Product image" />
-                    </div>
-                  </div>
-                  <div class="product-name">{{ item.name }}</div>
-                  <div>
-                    <b-icon icon="star-fill" class="star-icon"></b-icon>
-                    <b-icon icon="star-fill" class="star-icon"></b-icon>
-                    <b-icon icon="star-fill" class="star-icon"></b-icon>
-                    <b-icon icon="star-fill" class="star-icon"></b-icon>
-                    <b-icon icon="star" class="star-icon"></b-icon>
-                  </div>
-                  <div class="product-price">${{ item.price }}</div>
+                <div class="">
+                  <b-img fluid :src="item.image" alt="Product image" />
+                </div>
+              </div>
+              <div class="product-name">{{ item.name }}</div>
+              <div>
+                <b-icon icon="star-fill" class="star-icon"></b-icon>
+                <b-icon icon="star-fill" class="star-icon"></b-icon>
+                <b-icon icon="star-fill" class="star-icon"></b-icon>
+                <b-icon icon="star-fill" class="star-icon"></b-icon>
+                <b-icon icon="star" class="star-icon"></b-icon>
+              </div>
+              <div class="product-price mb-3">${{ item.price }}</div>
             </b-col>
           </b-row>
         </b-col>
@@ -67,6 +67,26 @@
             image: "/images/microsoft-surface-go.png",
             name: "Microsoft Surface Go",
             price: "399.00"
+          },
+          {
+            image: "/images/lg-4k-tv.png",
+            name: "LG 4K Ultra UHD TV",
+            price: "5500.00"
+          },
+          {
+            image: "/images/samsung-s22-ultra.png",
+            name: "Samsung Galaxy S22 Ultra",
+            price: "1350.00"
+          },
+          {
+            image: "/images/apple-iphone.png",
+            name: "Apple iPhone 14 Plus",
+            price: "850.00"
+          },
+          {
+            image: "/images/bose-headphones.png",
+            name: "Bose QuietComfort 45",
+            price: "300.00"
           }
         ]
       }
