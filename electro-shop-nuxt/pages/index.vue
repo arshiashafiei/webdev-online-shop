@@ -2,6 +2,7 @@
   <div>
     <Tutorial/>
     <BestSeller/>
+    <TopSeller/>
   </div>
 </template>
 
