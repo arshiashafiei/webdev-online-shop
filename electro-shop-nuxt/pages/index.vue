@@ -1,7 +1,7 @@
 <template>
   <div style="max-width: 1240px;margin-right: auto;margin-left: auto;">
     <Categories/>
-    <!-- <Sales /> -->
+    <Sales />
     <BestSeller/>
     <Advertisement/>
     <TopSeller/>
