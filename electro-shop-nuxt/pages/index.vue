@@ -1,5 +1,6 @@
 <template>
   <div>
+    <Categories/>
     <Tutorial/>
     <BestSeller/>
     <TopSeller/>
