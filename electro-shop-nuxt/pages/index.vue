@@ -5,7 +5,7 @@
     <BestSeller/>
     <Advertisement/>
     <TopSeller/>
-    <!-- <Shipping /> -->
+    <Shipping />
   </div>
 </template>
 
