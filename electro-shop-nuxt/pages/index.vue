@@ -1,6 +1,7 @@
 <template>
   <div>
     <Categories/>
+    <Advertisement/>
     <Tutorial/>
     <BestSeller/>
     <TopSeller/>
