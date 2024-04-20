@@ -53,7 +53,7 @@
     </b-container>
 </template>
   
-  <script>
+<script>
   export default {
     data() {
       return {
@@ -92,7 +92,7 @@
       }
     }
   }
-  </script>
+</script>
   
 <style scoped>
   .star-icon {

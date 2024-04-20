@@ -33,7 +33,7 @@
           <b-row>
             <b-col cols="12" md="6" lg="4" v-for="item in items" :key="item">
                 <div class="d-flex flex-column mb-4">
-                  <div class="">
+                  <div>
                     <b-img fluid :src="item.image" alt="Product image" />
                   </div>
                 </div>
@@ -53,7 +53,7 @@
     </b-container>
 </template>
   
-  <script>
+<script>
   export default {
     data() {
       return {
@@ -92,7 +92,7 @@
       }
     }
   }
-  </script>
+</script>
   
 <style scoped>
   .star-icon {
