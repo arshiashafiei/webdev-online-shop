@@ -1,10 +1,11 @@
 <template>
-  <div>
+  <div style="max-width: 1240px;margin-right: auto;margin-left: auto;">
     <Categories/>
-    <Advertisement/>
-    <Tutorial/>
+    <!-- <Sales /> -->
     <BestSeller/>
+    <Advertisement/>
     <TopSeller/>
+    <!-- <Shipping /> -->
   </div>
 </template>
 
