@@ -6,15 +6,19 @@
         <p class="login-description">Please login here</p>
         <form class="login-form">
           <label for="email" class="input-label">Email Address</label>
-          <input type="email" id="email" class="input-field" value="kristin.watson@example.com" />
+          <!-- <input type="email" id="email" class="input-field" value="kristin.watson@example.com" /> -->
+          <b-form-input class="mb-2" id="email" type="email" placeholder="Email" size="lg"></b-form-input>
           <label for="password" class="input-label">Password</label>
-          <input type="password" id="password" class="input-field" value="••••••••••••••••••" />
+          <!-- <input type="password" id="password" class="input-field" value="••••••••••••••••••" /> -->
+          <b-form-input class="mb-2" id="password" type="password" placeholder="Password" size="lg"></b-form-input>
           <div class="form-options">
             <div class="remember-me">
-              <!-- need to add checkmark -->checkmark
-              <span class="remember-me-text">Remember Me</span>
+              <b-form-checkbox class="mt-2" id="checkbox">
+                Remember Me
+              </b-form-checkbox>
+              <!-- <span class="remember-me-text">Remember Me</span> -->
             </div>
-            <a href="#" class="forgot-password">Forgot Password?</a>
+            <a href="#" class="forgot-password mt-2">Forgot Password?</a>
           </div>
           <button type="submit" class="login-button">Login</button>
           <button type="button" class="register-button">Register</button>
@@ -24,14 +28,16 @@
           <span class="separator-text">Or Login With</span>
           <hr class="separator-line" />
         </div>
-        <button type="button" class="social-login google-login">
-          <img src="/login/google.jpg" alt="google icon" class="social-icon" />
-          <span class="social-text">Login with Google</span>
-        </button>
-        <button type="button" class="social-login apple-login">
-          <img src="/login/apple.jpg" alt="apple icon" class="social-icon" />
-          <span class="social-text">Login with Apple</span>
-        </button>
+        <div class="d-flex flex-column">
+          <button type="button" class="social-login google-login">
+            <img src="/login/google.jpg" alt="google icon" class="social-icon" />
+            <span class="social-text">Login with Google</span>
+          </button>
+          <button type="button" class="social-login apple-login">
+            <img src="/login/apple.jpg" alt="apple icon" class="social-icon" />
+            <span class="social-text">Login with Apple</span>
+          </button>
+        </div>
       </div>
     </b-modal>
     <b-button v-b-modal.login-modal class="login-button-navbar">Login</b-button>
@@ -64,8 +70,8 @@
   max-width: 420px;
   padding: 20px;
   border: 1px solid rgba(165, 169, 172, 0.2);
-  border-radius: 16px;
-  background-color: var(--White-500, #fff);
+  border-radius: 2rem;
+  background-color: white;
   box-shadow: 0px 10px 40px -4px rgba(16, 24, 40, 0.02), 0px 8px 8px -4px rgba(16, 24, 40, 0.02);
   color: var(--Dark-500, #101316);
   font-weight: 400;
@@ -86,13 +92,13 @@
 }
 
 .input-label {
-  margin-top: 23px;
   font: 12px/167% Montserrat, sans-serif;
+  margin-bottom: 0;
 }
 
 .input-field {
-  margin-top: 8px;
-  padding: 21px 16px;
+  margin-bottom: 1rem;
+  padding: 1rem;
   border: 1px solid rgba(28, 78, 142, 1);
   border-radius: 10px;
   font: 16px/187.5% Montserrat, sans-serif;
@@ -103,14 +109,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 10px;
 }
 
 .remember-me {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font: 16px/30px Montserrat, sans-serif;
+  font: Montserrat, sans-serif;
 }
 
 .checkbox-icon {
@@ -123,15 +125,13 @@
 .forgot-password {
   font: 14px/24px Montserrat, sans-serif;
   text-align: right;
+  color: #101316;
 }
 
 .login-button,
 .register-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 30px;
-  padding: 13px 20px;
+  margin-top: 2rem;
+  padding: 0.9rem;
   border: none;
   border-radius: 10px;
   font: 16px/30px Montserrat, sans-serif;
@@ -140,25 +140,24 @@
 }
 
 .login-button {
-  background-color: var(--Primary-500, #1c4e8e);
-  color: var(--White-500, #fff);
+  background-color: #1c4e8e;
+  color: white;
 }
 
 .register-button {
-  margin-top: 10px;
+  margin-top: 0.8rem;
   border: 1px solid rgba(28, 78, 142, 1);
-  color: var(--Primary-500, #1c4e8e);
+  color: #1c4e8e;
+  background-color: white;
 }
 
 .separator {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 16px;
-  gap: 8px;
-  font-size: 14px;
+  margin-top: 1rem;
+  gap: 0.5rem;
   text-align: center;
-  line-height: 24px;
 }
 
 .separator-line {
@@ -176,8 +175,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 16px;
-  padding: 13px 20px;
+  padding: 1rem;
   border: 1px solid rgba(165, 169, 172, 0.2);
   border-radius: 10px;
   font: 16px/30px Montserrat, sans-serif;
@@ -186,11 +184,11 @@
 }
 
 .google-login {
-  margin-top: 16px;
+  margin-top: 1rem;
 }
 
 .apple-login {
-  margin-top: 10px;
+  margin-top: 0.6rem;
 }
 
 .social-icon {
