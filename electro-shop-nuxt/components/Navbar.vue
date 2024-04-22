@@ -11,7 +11,7 @@
           </b-dropdown>
           <div class="search-input">
             <img src="icons/search-icon.svg" alt="Search Icon" class="search-icon" />
-            <span>Search</span>
+            <b-form-input class="search-input-inside" type="search" placeholder="Search"></b-form-input>
           </div>
           <b-button class="search-button">Search</b-button>
         </div>
@@ -122,6 +122,10 @@
   padding: 0px 1rem;
   border: 1px solid rgba(165, 169, 172, 0.2);
   color: rgba(16, 19, 22, 0.2);
+}
+
+.search-input-inside {
+  border: 0;
 }
 
 .search-icon {
