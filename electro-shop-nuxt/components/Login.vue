@@ -11,7 +11,7 @@
             <input type="password" id="password" class="input-field" value="••••••••••••••••••" />
             <div class="form-options">
               <div class="remember-me">
-                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/df13adaaa8c3985dff3af5e0b8abb23c10735d45f1129e3ca8cfe0e7fd7dd563?apiKey=5eeb749ae38346149737492350a80845&" alt="" class="checkbox-icon" />
+                <!-- need to add checkmark -->checkmark
                 <span class="remember-me-text">Remember Me</span>
               </div>
               <a href="#" class="forgot-password">Forgot Password?</a>
@@ -25,11 +25,11 @@
             <hr class="separator-line" />
           </div>
           <button type="button" class="social-login google-login">
-            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/984eef5419ee5fbf0ce2ce8dc602253be4f48dd8b114465bee2a69877b30dde1?apiKey=5eeb749ae38346149737492350a80845&" alt="" class="social-icon" />
+            <img src="/login/google.jpg" alt="google icon" class="social-icon" />
             <span class="social-text">Login with Google</span>
           </button>
           <button type="button" class="social-login apple-login">
-            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/12f5fad811bb9fb3fa46a69a09c28539b2c5eb5006791e704e5267d1d890a631?apiKey=5eeb749ae38346149737492350a80845&" alt="" class="social-icon" />
+            <img src="/login/apple.jpg" alt="apple icon" class="social-icon" />
             <span class="social-text">Login with Apple</span>
           </button>
         </div>

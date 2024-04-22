@@ -20,7 +20,9 @@
           <p>Additional Information</p>
         </b-tab>
         <b-tab title="Reviews">
-          <p>Reviews</p>
+          <h3>Customer Reviews</h3>
+          <Review />
+          <AddReview />
         </b-tab>
       </b-tabs>
       <div class="product-description__underline">
