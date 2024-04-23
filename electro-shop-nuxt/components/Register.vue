@@ -1,27 +1,24 @@
 <template>
   <div>
-    <Otp />
-    <b-modal id="login-modal" hide-footer hide-header body-class="login-container">
+    <b-modal id="register-modal" hide-footer hide-header body-class="login-container">
       <div>
-        <h2 class="welcome-text">Welcome 👋</h2>
-        <p class="login-description">Please login here</p>
+        <h2 class="welcome-text">Create New Account</h2>
+        <p class="login-description">Please enter details</p>
         <form class="login-form">
+          <label for="name" class="input-label">Name</label>
+          <b-form-input class="mb-2" id="name" type="text" placeholder="Name" size="lg"></b-form-input>
           <label for="email" class="input-label">Email Address</label>
           <b-form-input class="mb-2" id="email" type="email" placeholder="Email" size="lg"></b-form-input>
           <label for="password" class="input-label">Password</label>
           <b-form-input class="mb-2" id="password" type="password" placeholder="Password" size="lg"></b-form-input>
           <div class="form-options">
             <div class="remember-me">
-              <b-form-checkbox class="mt-2" id="checkbox">
-                Remember Me
+              <b-form-checkbox class="mt-2" id="checkbox2">
+                I agree to the Terms & Conditions
               </b-form-checkbox>
             </div>
-            <a href="#" class="forgot-password mt-2" v-b-modal.otp-modal>Forgot Password?</a>
           </div>
-          <div class="d-flex flex-column">
-            <button type="submit" class="login-button">Login</button>
-            <Register />
-          </div>
+          <button type="submit" class="register-button">Register</button>
         </form>
         <div class="separator">
           <hr class="separator-line" />
@@ -40,20 +37,25 @@
         </div>
       </div>
     </b-modal>
-    <b-button v-b-modal.login-modal class="login-button-navbar">Login</b-button>
+    <b-button v-b-modal.register-modal class="register-button-login w-100">Register</b-button>
   </div>
 </template>
 
 <style scoped>
-.login-button-navbar {
-  padding: 0.7rem 1.4rem;
-  border: none;
+.register-button-login {
+  padding: 0.9rem;
   border-radius: 10px;
-  background-color: #1c4e8e;
-  font-family: Montserrat, sans-serif;
+  font: 16px/30px Montserrat, sans-serif;
+  white-space: nowrap;
+  cursor: pointer;
+  margin-top: 0.8rem;
+  border: 1px solid rgba(28, 78, 142, 1);
+  color: #1c4e8e;
+  background-color: white;
+
 }
 
-.login-button {
+.register-button {
   padding: 20px;
   border: none;
   border-radius: 10px;
@@ -128,7 +130,6 @@
   color: #101316;
 }
 
-.login-button,
 .register-button {
   margin-top: 2rem;
   padding: 0.9rem;
@@ -139,16 +140,9 @@
   cursor: pointer;
 }
 
-.login-button {
+.register-button {
   background-color: #1c4e8e;
   color: white;
-}
-
-.register-button {
-  margin-top: 0.8rem;
-  border: 1px solid rgba(28, 78, 142, 1);
-  color: #1c4e8e;
-  background-color: white;
 }
 
 .separator {
