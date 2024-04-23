@@ -1,29 +1,39 @@
 <template>
-  <b-sidebar id="cart-sidebar" title="Sidebar" right shadow>
+  <b-sidebar id="cart-sidebar" title="Sidebar" right shadow no-header bg-variant="white">
     <div class="px-3 py-2">
       <main class="cart-items">
         <h2 class="cart-title">
           You have <span class="cart-count">{{ $store.state.products_in_cart.length }} items</span> in your cart
         </h2>
-        <section v-for="(item, index) in $store.state.products_in_cart" :key="item.id" class="cart-item">
+        <div v-for="(item, index) in $store.state.products_in_cart" :key="item.id">
+          <section class="cart-item">
           <div class="item-details">
-            <img
+            <b-img fluid
               src="/product-photo.png"
               alt="Apple iPhone 14 Pro"
               class="item-image"
             />
             <div class="item-info">
-              <h3 class="item-name">{{ item.product_name }}</h3>
-              <p class="item-price">${{ item.price }}</p>
-              <p class="item-quantity">QTY: {{ item.quantity }}</p>
+              <p class="item-name mb-1">{{ item.product_name }}</p>
+              <p class="item-price mb-1">${{ item.price }}</p>
+              <p class="item-quantity mb-1">QTY: {{ item.quantity }}</p>
             </div>
           </div>
-          <div @click="remove_from_cart(index)">
-            <b-icon icon="trash-fill" variant="danger" class="item-remove" font-scale="2" />
+          <div class="align-self-end" @click="remove_from_cart(index)">
+            <b-icon icon="trash" variant="danger" class="item-remove" font-scale="3" />
           </div>
+          
         </section>
+
+          <div class="separator mt-3"></div>
+        </div>
+        
       </main>
     </div>
+    <p>Subtotal</p>
+    <p></p>
+    <b-button variant="primary-outline" block class="mx-3">View Cart</b-button>
+    <b-button variant="primary" block class="mx-3">Checkout</b-button>
   </b-sidebar>
 </template>
 
@@ -36,15 +46,16 @@ export default {
     }
 }
 </script>
+
 <style scoped>
+.separator {
+  border: 1px solid rgba(165, 169, 172, 0.2);
+}
+
 .cart-items {
   display: flex;
   flex-direction: column;
-  max-width: 312px;
-  font-size: 14px;
-  color: var(--Dark-500, #101316);
-  font-weight: 400;
-  line-height: 171%;
+  color: #101316;
 }
 
 .cart-title {
@@ -60,7 +71,6 @@ export default {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  gap: 20px;
   margin-top: 30px;
 }
 
@@ -70,17 +80,14 @@ export default {
 }
 
 .item-image {
+  align-self: center;
   width: 70px;
-  aspect-ratio: 1;
-  object-fit: cover;
-  object-position: center;
 }
 
 .item-info {
   display: flex;
   flex-direction: column;
   padding: 0 20px;
-  margin-top: 7px;
 }
 
 .item-name {
@@ -90,21 +97,15 @@ export default {
 .item-price {
   font-family: Montserrat, sans-serif;
   font-weight: 700;
-  margin-top: 11px;
 }
 
 .item-quantity {
   font-family: Montserrat, sans-serif;
-  margin-top: 11px;
 }
 
 .item-remove {
   width: 20px;
-  aspect-ratio: 1;
-  object-fit: cover;
-  object-position: center;
   align-self: end;
-  margin-top: 50px;
   cursor: pointer;
 }
 
