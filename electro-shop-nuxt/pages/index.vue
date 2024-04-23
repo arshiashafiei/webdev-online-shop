@@ -1,42 +1,45 @@
 <template>
-  <div style="margin-right: auto;margin-left: auto;">
-    <b-container>
-      <div class="hero-content">
-        <div class="hero-text">
-          <div class="hero-heading">
-            <h1>
-              Great Sound <br />
-              With Solo <br />
-              Headphone
-            </h1>
-            <p class="hero-description">
-              It is a long established fact that a reader will be distracted by the readable content of a page when
-              looking at its layout. The point of using Lorem Ipsum.
-            </p>
-            <button class="shop-now-button">
-              <span>Shop Now</span>
-              <b-icon icon="arrow-right"></b-icon>
-            </button>
+  <b-container fluid class="p-0">
+    <div class="gray-background">
+      <b-container>
+        <div class="hero-content">
+          <div class="hero-text">
+            <div class="hero-heading">
+              <h1>
+                Great Sound <br />
+                With Solo <br />
+                Headphone
+              </h1>
+              <p class="hero-description">
+                It is a long established fact that a reader will be distracted
+                by the readable content of a page when looking at its layout.
+                The point of using Lorem Ipsum.
+              </p>
+              <button class="shop-now-button">
+                <span>Shop Now</span>
+                <b-icon icon="arrow-right"></b-icon>
+              </button>
+            </div>
+          </div>
+          <div class="hero-image-container">
+            <img src="hero.png" alt="Headphone product" class="hero-image" />
           </div>
         </div>
-        <div class="hero-image-container">
-          <img src="hero.png" alt="Headphone product" class="hero-image" />
-        </div>
-      </div>
-    </b-container>
+      </b-container>
+    </div>
     <Categories />
     <Sales />
     <BestSeller />
     <Advertisement />
     <TopSeller />
     <Shipping />
-  </div>
+  </b-container>
 </template>
 
 <script>
 export default {
-  name: 'IndexPage'
-}
+  name: "IndexPage",
+};
 </script>
 
 <style scoped>
@@ -44,7 +47,6 @@ export default {
   position: relative;
   margin-top: 10px;
   width: 100%;
-  max-width: 1191px;
   display: flex;
   gap: 20px;
 }

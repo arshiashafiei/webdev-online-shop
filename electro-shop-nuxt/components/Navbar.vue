@@ -3,7 +3,7 @@
     <CartSidebar />
     <div class="header-top my-3">
       <div class="logo-search">
-        <b-img src="logo.svg" alt="Company Logo" class="logo" />
+        <b-img src="/logo.svg" alt="Company Logo" class="logo" />
         <div class="search-bar">
           <b-dropdown variant="bg-transparent" class="search-dropdown" split text="All">
             <b-dropdown-item href="#">An item</b-dropdown-item>
@@ -105,12 +105,6 @@
   display: flex;
 }
 
-@media (max-width: 991px) {
-  .search-bar {
-    flex-wrap: wrap;
-  }
-}
-
 .search-dropdown {
   border: 1px solid rgba(165, 169, 172, 0.2);
   border-radius: 10px 0 0 10px;
@@ -171,13 +165,16 @@
 }
 
 .cart-count {
-  position: relative;
+  position: absolute;
   display: flex;
   justify-content: center;
   padding: 2px 0;
   border-radius: 50%;
   background-color: var(--Primary-500, #1c4e8e);
-  font-family: Montserrat, sans-serif;
+  width: 20px;
+  height: 20px;
+  top: -8px;
+  right: -10px;
 }
 
 .header-bottom {

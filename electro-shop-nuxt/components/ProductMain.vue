@@ -96,7 +96,7 @@
         </div>
         <div class="add-to-cart">
           <div class="quantity">
-            <b-icon icon="dash" font-scale="2" class="quantity-icon increase" />
+            <b-icon icon="dash" font-scale="2" class="quantity-icon decrease" />
             <div class="quantity-value">1</div>
             <b-icon icon="plus" font-scale="2" class="quantity-icon increase" />
           </div>
@@ -501,6 +501,7 @@ export default {
 
 .decrease {
   border-radius: 10px 0 0 10px;
+  height: 100%;
 }
 
 .quantity-value {
@@ -509,9 +510,11 @@ export default {
   border-style: solid;
   border-top-width: 1px;
   border-bottom-width: 1px;
-  align-items: start;
+  width: 3rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
   justify-content: center;
-  padding: 23px 17px;
 }
 
 @media (max-width: 991px) {
@@ -522,6 +525,7 @@ export default {
 
 .increase {
   border-radius: 0 10px 10px 0;
+  height: 100%;
 }
 
 .add-to-cart-btn {

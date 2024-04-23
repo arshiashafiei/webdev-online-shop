@@ -1,43 +1,95 @@
 <template>
-  <b-container fluid class="product-image">
-    <b-row>
-      <b-col>
-        <div class="d-flex flex-column align-items-start product-banner">
-          <div class="product-title mb-2">Apple iPhone 13 Pro Max</div>
-          <div class="product-description mb-3">Don't miss the last opportunity</div>
-          <b-button variant="primary" class="d-flex flex-row shop-now-button">
-            <div class="button-text mr-3">Shop Now</div>
-            <b-icon icon="arrow-right"></b-icon>
-          </b-button>
-        </div>
-      </b-col>
-    </b-row>
-    <!-- <b-img src="/ad-background.png" alt="Apple iPhone 13 Pro Max" class="" /> -->
-  </b-container>
+  <div class="product-banner">
+    <div class="container">
+      <img
+        src="ad-background.png"
+        alt="Apple iPhone 13 Pro Max"
+        class="product-image"
+      />
+      <p class="product-title">Apple iPhone 13 Pro Max</p>
+      <p class="product-description">Don't miss the last opportunity</p>
+      <b-button class="shop-now-button">
+        <span class="button-text">Shop Now</span>
+        <b-icon icon="arrow-right"></b-icon>
+      </b-button>
+    </div>
+  </div>
 </template>
-  
+
 <style scoped>
+.product-banner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  min-height: 500px;
+  padding: 80px;
+  color: #fff;
+  font-weight: 400;
+  overflow: hidden;
+}
+
+@media (max-width: 991px) {
   .product-banner {
-    color: #fff;
-    font-weight: 400;
+    padding: 0 20px;
   }
-  
-  .product-image {
-    background-image: url("/ad-background.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  
+}
+
+.product-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.product-title {
+  position: relative;
+  width: 440px;
+  font: 700 40px/56px Montserrat, sans-serif;
+}
+
+@media (max-width: 991px) {
   .product-title {
-    font: 700 40px/56px Montserrat, sans-serif;
+    max-width: 100%;
   }
-    
+}
+
+.product-description {
+  position: relative;
+  font: 18px/167% Montserrat, sans-serif;
+}
+
+@media (max-width: 991px) {
   .product-description {
-    font: 18px/167% Montserrat, sans-serif;
+    max-width: 100%;
   }
-  
-  .button-text {
-    font-family: Montserrat, sans-serif;
+}
+
+.shop-now-button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: #1c4e8e;
+  font: 16px/30px Montserrat, sans-serif;
+  text-decoration: none;
+}
+
+@media (max-width: 991px) {
+  .shop-now-button {
+    margin-left: 10px;
   }
+}
+
+.button-icon {
+  width: 24px;
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+}
 </style>
