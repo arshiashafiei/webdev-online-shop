@@ -9,7 +9,7 @@
       <p class="product-title">Apple iPhone 13 Pro Max</p>
       <p class="product-description">Don't miss the last opportunity</p>
       <b-button class="shop-now-button">
-        <span class="button-text">Shop Now</span>
+        Shop Now
         <b-icon icon="arrow-right"></b-icon>
       </b-button>
     </div>
@@ -76,6 +76,7 @@
   padding: 10px 20px;
   border-radius: 10px;
   background-color: #1c4e8e;
+  border-color: #1c4e8e;
   font: 16px/30px Montserrat, sans-serif;
   text-decoration: none;
 }

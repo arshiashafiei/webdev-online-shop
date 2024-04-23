@@ -1,6 +1,6 @@
 <template>
-    <b-container>
-      <b-row>
+    <b-container class="my-5">
+      <b-row class="mb-3">
         <b-col>
           <h2 class="title">Our Bestseller Products</h2>
         </b-col>
@@ -13,27 +13,32 @@
               </div>
               
             </b-nav-item>
-            <b-nav-item>Featured</b-nav-item>
-            <b-nav-item>Top Rated</b-nav-item>
+            <b-nav-item disabled>Featured</b-nav-item>
+            <b-nav-item disabled>Top Rated</b-nav-item>
           </b-nav>
         </b-col>
       </b-row>
 
       <b-row>
         <b-col cols="12" lg="4">
-          <div class="d-flex flex-column">
-            <div class="product-name">Apple iPad Pro <br />Wi-Fi</div>
-            <div class="product-price">$1520</div>
-            <div class="ml-3 mt-3">
-              <b-img fluid src="/images/apple-ipad-pro.png" alt="Apple iPad Pro Wi-Fi" />
+<div class="d-flex flex-column">
+          <div class="gray-background pl-3 pt-3">
+            <h1 class="product-name">Apple iPad Pro Wi-Fi</h1>
+            <h2 class="product-price">$1520</h2>
+            <div class="d-flex justify-content-end">
+              <b-img
+                src="/images/apple-ipad-pro.png"
+                alt="Apple iPad Pro Wi-Fi"
+              />
             </div>
           </div>
+        </div>
         </b-col>
         <b-col cols="12" lg="8">
           <b-row>
             <b-col cols="12" md="6" lg="4" v-for="item in items" :key="item">
               <div class="d-flex flex-column mb-4">
-                <div>
+                <div class="gray-background d-flex justify-content-center">
                   <b-img fluid :src="item.image" alt="Product image" />
                 </div>
               </div>

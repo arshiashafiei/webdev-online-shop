@@ -118,13 +118,12 @@ export default {
 
 .shop-now-button {
   display: flex;
-  justify-content: center;
+  align-items: center;
   border-radius: 10px;
   background-color: #1c4e8e;
   align-self: start;
   margin-top: 38px;
   gap: 10px;
-  font-size: 16px;
   color: #fff;
   padding: 13px 20px;
   border: none;

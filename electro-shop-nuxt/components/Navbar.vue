@@ -10,16 +10,16 @@
             <b-dropdown-item href="#">Another item</b-dropdown-item>
           </b-dropdown>
           <div class="search-input">
-            <img src="icons/search-icon.svg" alt="Search Icon" class="search-icon" />
+            <img src="/icons/search-icon.svg" alt="Search Icon" class="search-icon" />
             <b-form-input class="search-input-inside" type="search" placeholder="Search"></b-form-input>
           </div>
           <b-button class="search-button">Search</b-button>
         </div>
       </div>
       <div class="header-icons">
-        <div class="icon-group">
-          <img src="icons/search-icon.svg" alt="Heart Icon" class="icon" />
-          <img src="icons/heart-icon.svg" alt="User Icon" class="icon" />
+        <div class="icon-group mr-3">
+          <img src="/icons/search-icon.svg" alt="Heart Icon" class="icon" />
+          <img src="/icons/heart-icon.svg" alt="User Icon" class="icon" />
           <div class="cart-icon" v-b-toggle.cart-sidebar>
             <div class="icon">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">

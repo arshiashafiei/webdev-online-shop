@@ -14,7 +14,7 @@
         </b-col>
       </b-row>
 
-      <b-row>
+      <b-row class="mt-3">
         <b-col cols="12" md="4" lg="2" v-for="item in items" :key="item">
           <div class="d-flex flex-column align-items-center justify-content-center">
             <div class="category-image-wrapper d-flex justify-content-center">

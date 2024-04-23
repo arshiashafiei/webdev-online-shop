@@ -10,10 +10,10 @@
               <div class="product-card-description">
                 Don't miss the last opportunity
               </div>
-              <div class="product-card-cta">
+              <b-button to="/product/1" class="product-card-cta">
                 <span class="product-card-cta-text">Shop Now</span>
                 <b-icon icon="arrow-right"></b-icon>
-              </div>
+              </b-button>
             </div>
             <b-img fluid src="/sales/laptop.png" alt="MacBook Air M2" />
           </div>
@@ -29,10 +29,10 @@
               <div class="product-card-description">
                 Don't miss the last opportunity
               </div>
-              <div class="product-card-cta">
+              <b-button to="/product/2" class="product-card-cta">
                 <span class="product-card-cta-text">Shop Now</span>
                 <b-icon icon="arrow-right"></b-icon>
-              </div>
+              </b-button>
             </div>
             <b-img src="/sales/phone.png" alt="Iphone 14 Pro" />
           </div>
@@ -45,11 +45,8 @@
 <style scoped>
 .product-card-content {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  color: var(--Dark-500, #101316);
-  font-weight: 400;
-  line-height: 167%;
+  color: #101316;
 }
 
 @media (max-width: 991px) {
@@ -79,7 +76,7 @@
 }
 
 .product-card-discount {
-  position: relative;
+  width: fit-content;
   padding: 7px 10px;
   border-radius: 5px;
   background-color: var(--primary-primary-10, rgba(28, 78, 142, 0.1));
@@ -100,7 +97,7 @@
 }
 
 .product-card-cta {
-  position: relative;
+  width: fit-content;
   display: flex;
   align-items: center;
   gap: 10px;

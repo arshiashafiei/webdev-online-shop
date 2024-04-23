@@ -1,6 +1,6 @@
 <template>
-  <b-container>
-    <b-row>
+  <b-container class="my-5">
+    <b-row class="mb-3">
       <b-col>
         <h2 class="title">Top Selling Products</h2>
       </b-col>
@@ -12,8 +12,8 @@
               <span class="underline"></span>
             </div>
           </b-nav-item>
-          <b-nav-item>Featured</b-nav-item>
-          <b-nav-item>Top Rated</b-nav-item>
+          <b-nav-item disabled>Featured</b-nav-item>
+          <b-nav-item disabled>Top Rated</b-nav-item>
         </b-nav>
       </b-col>
     </b-row>
@@ -26,7 +26,7 @@
             <h2 class="product-price">$1520</h2>
             <div class="d-flex justify-content-end">
               <b-img
-                src="/images/apple-ipad-pro.png"
+                src="/images/iphone-main.png"
                 alt="Apple iPad Pro Wi-Fi"
               />
             </div>
@@ -64,32 +64,32 @@ export default {
     return {
       items: [
         {
-          image: "/images/apple-ipad-mini.png",
+          image: "/top-seller/1.png",
           name: "Panasonic Lumix DC-GH5 II",
           price: "1500.00",
         },
         {
-          image: "/images/microsoft-surface-go.png",
+          image: "/top-seller/2.png",
           name: "Asus ROG Delta S",
           price: "250.00",
         },
         {
-          image: "/images/microsoft-surface-go.png",
+          image: "/top-seller/3.png",
           name: "Xiaomi Fimi X8 Mini",
           price: "650.00",
         },
         {
-          image: "/images/microsoft-surface-go.png",
+          image: "/top-seller/4.png",
           name: "Apple iPhone 13",
           price: "500.00",
         },
         {
-          image: "/images/microsoft-surface-go.png",
+          image: "/top-seller/5.png",
           name: "Fossil Gen 6 Smart Watch",
           price: "450.00",
         },
         {
-          image: "/images/microsoft-surface-go.png",
+          image: "/top-seller/6.png",
           name: "Apple iPad Air Wi-Fi",
           price: "850.00",
         },
