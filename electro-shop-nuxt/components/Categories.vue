@@ -1,5 +1,5 @@
 <template>
-    <b-container>
+    <b-container class="my-5">
       <b-row>
         <b-col>
           <h2 class="title">Shop by Categories</h2>
@@ -17,8 +17,8 @@
       <b-row>
         <b-col cols="12" md="4" lg="2" v-for="item in items" :key="item">
           <div class="d-flex flex-column align-items-center justify-content-center">
-            <div class="category-image-wrapper">
-              <b-img fluid :src="item.image" alt="Product image" />
+            <div class="category-image-wrapper d-flex justify-content-center">
+              <b-img fluid :src="item.image" alt="Product image" class="p-3" />
             </div>
           </div>
           <div class="category-name mt-3 mb-3">{{ item.name }}</div>
@@ -33,27 +33,27 @@
       return {
         items: [
           {
-            image: "/images/apple-ipad-mini.png",
+            image: "/cat-images/phone.png",
             name: "Mobile Phones"
           },
           {
-            image: "/images/microsoft-surface-go.png",
+            image: "/cat-images/tv.png",
             name: "Smart TV"
           },
           {
-            image: "/images/lg-4k-tv.png",
+            image: "/cat-images/watch.png",
             name: "Smart Watch"
           },
           {
-            image: "/images/samsung-s22-ultra.png",
+            image: "/cat-images/laptop.png",
             name: "Laptops"
           },
           {
-            image: "/images/apple-iphone.png",
+            image: "/cat-images/drone.png",
             name: "Drones"
           },
           {
-            image: "/images/bose-headphones.png",
+            image: "/cat-images/headphone.png",
             name: "Headphones"
           }
         ]

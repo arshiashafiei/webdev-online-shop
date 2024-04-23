@@ -6,15 +6,15 @@
         </b-col>
         <b-col>
           <b-nav align="right" class="nav">
-            <b-nav-item class="active">
+            <b-nav-item active active-class="active">
               <div class="d-flex flex-column">
                 New
                 <span class="underline"></span>
               </div>
               
             </b-nav-item>
-            <b-nav-item>Featured</b-nav-item>
-            <b-nav-item>Top Rated</b-nav-item>
+            <b-nav-item active active-class="black">Featured</b-nav-item>
+            <b-nav-item active active-class="black">Top Rated</b-nav-item>
           </b-nav>
         </b-col>
       </b-row>
@@ -95,6 +95,10 @@
 </script>
   
 <style scoped>
+  .black {
+    color: black !important;
+  }
+
   .star-icon {
     color: #FFC11F;
   }
