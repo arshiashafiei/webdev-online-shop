@@ -9,7 +9,7 @@
           <section class="cart-item">
           <div class="item-details">
             <b-img fluid
-              src="/product-photo.png"
+              :src="item.image"
               alt="Apple iPhone 14 Pro"
               class="item-image"
             />
@@ -30,10 +30,6 @@
         
       </main>
     </div>
-    <p>Subtotal</p>
-    <p></p>
-    <b-button variant="primary-outline" block class="mx-3">View Cart</b-button>
-    <b-button variant="primary" block class="mx-3">Checkout</b-button>
   </b-sidebar>
 </template>
 

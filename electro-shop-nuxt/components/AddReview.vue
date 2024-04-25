@@ -1,5 +1,5 @@
 <template>
-  <main class="review-form">
+  <main class="review-form mt-3">
     <h2 class="review-form__title">Add your Review</h2>
     <p class="review-form__rating-label">Your Rating</p>
     <div class="review-form__rating">
@@ -13,26 +13,16 @@
           v-for="star in Array.from({ length: rating }, (v, k) => k)"
           :key="star"
           :icon="selected_rating === rating ? 'star-fill' : 'star'"
-          class="star-icon"
+          :class="selected_rating === rating ? 'star-icon' : ''"
         ></b-icon>
       </div>
     </div>
     <form class="review-form__form">
-      <label for="nameInput" class="review-form__label">Name</label>
-      <input
-        type="text"
-        id="nameInput"
-        placeholder="Enter Your Name"
-        class="review-form__input"
-      />
+      <label for="name" class="review-form__label">Name</label>
+      <b-form-input class="mb-3" id="name" type="email" placeholder="Enter your Name" size="lg"></b-form-input>
 
-      <label for="emailInput" class="review-form__label">Email Address</label>
-      <input
-        type="email"
-        id="emailInput"
-        placeholder="Enter Your Email"
-        class="review-form__input"
-      />
+      <label for="email" class="review-form__label">Email Address</label>
+      <b-form-input class="mb-3" id="email" type="email" placeholder="Enter your Email" size="lg"></b-form-input>
 
       <label for="reviewInput" class="review-form__label">Your Review</label>
       <div class="review-form__review-input">
@@ -43,10 +33,11 @@
         />
       </div>
 
-      <button type="submit" class="review-form__submit-btn">Submit</button>
+      <b-button type="submit" class="review-form__submit-btn mb-3">Submit</b-button>
     </form>
   </main>
 </template>
+
 <script>
 export default {
   data() {
@@ -191,5 +182,9 @@ export default {
 
 .star-rating:last-child {
   border: none !important;
+}
+
+.star-icon {
+  color: #FFC11F;
 }
 </style>

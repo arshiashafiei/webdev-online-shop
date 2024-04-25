@@ -61,7 +61,7 @@
             <b-icon icon="star-fill" class="star-icon"></b-icon>
             <b-icon icon="star-fill" class="star-icon"></b-icon>
             <b-icon icon="star-fill" class="star-icon"></b-icon>
-            <b-icon icon="star" class="star-icon"></b-icon>
+            <b-icon icon="star-fill" class="star-icon"></b-icon>
           </div>
           <div class="rating-text">5.0 (121 Reviews)</div>
         </div>
@@ -194,6 +194,7 @@ export default {
         product_name: "Apple iPhone 14 Pro Max",
         price: 1100,
         quantity: 1,
+        image: "/product-photo.png"
       };
       this.$store.dispatch("add_to_cart", newProduct);
     },

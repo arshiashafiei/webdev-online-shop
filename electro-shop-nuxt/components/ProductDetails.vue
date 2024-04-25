@@ -17,18 +17,14 @@
           </p>
         </b-tab>
         <b-tab title="Additional Information">
-          <p>Additional Information</p>
+          <ProductInfo />
         </b-tab>
         <b-tab title="Reviews">
-          <h3>Customer Reviews</h3>
+          <h3 class="mb-4">Customer Reviews</h3>
           <Review />
           <AddReview />
         </b-tab>
       </b-tabs>
-      <div class="product-description__underline">
-        <div class="product-description__underline-active"></div>
-        <div class="product-description__underline-inactive"></div>
-      </div>
     </main>
 </template>
   

@@ -5,13 +5,15 @@ export const state = () => {
                 id: 1,
                 product_name: "Apple iPhone 14 Pro",
                 price: 100,
-                quantity: 1
+                quantity: 1,
+                image: "/top-seller/4.png"
             },
             {
                 id: 2,
                 product_name: "Asus ROG Delta S",
                 price: 150,
-                quantity: 1
+                quantity: 1,
+                image: "/top-seller/2.png"
             },
         ],
 
