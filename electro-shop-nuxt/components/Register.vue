@@ -161,10 +161,6 @@
   border: none;
 }
 
-.separator-text {
-  font-family: Montserrat, sans-serif;
-}
-
 .social-login {
   display: flex;
   justify-content: center;
@@ -189,9 +185,5 @@
   width: 24px;
   height: 24px;
   margin-right: 10px;
-}
-
-.social-text {
-  font-family: Montserrat, sans-serif;
 }
 </style>

@@ -86,17 +86,8 @@ export default {
   padding: 0 20px;
 }
 
-.item-name {
-  font-family: Montserrat, sans-serif;
-}
-
 .item-price {
-  font-family: Montserrat, sans-serif;
   font-weight: 700;
-}
-
-.item-quantity {
-  font-family: Montserrat, sans-serif;
 }
 
 .item-remove {

@@ -34,7 +34,7 @@
     height: 108px;
     margin: 0 auto;
     border-radius: 50%;
-    background-color: var(--primary-primary-10, rgba(28, 78, 142, 0.1));
+    background-color: rgba(28, 78, 142, 0.1);
     object-fit: auto;
     object-position: center;
 }
@@ -47,7 +47,6 @@
 
 .success-description {
     margin-top: 10px;
-    font-family: Montserrat, sans-serif;
     text-align: center;
 }
 
@@ -55,9 +54,8 @@
     margin-top: 30px;
     padding: 13px 20px;
     border-radius: 10px;
-    background-color: var(--Primary-500, #1c4e8e);
-    color: var(--White-500, #fff);
-    font-family: Montserrat, sans-serif;
+    background-color: #1c4e8e;
+    color: #fff;
     justify-content: center;
     align-items: center;
     cursor: pointer;

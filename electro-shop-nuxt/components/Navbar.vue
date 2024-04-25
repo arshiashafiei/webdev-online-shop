@@ -132,7 +132,6 @@
   border: none;
   border-radius: 0 10px 10px 0;
   background-color: #1c4e8e;
-  font-family: Montserrat, sans-serif;
 }
 
 .header-icons {
@@ -209,7 +208,6 @@
 }
 
 .nav-link {
-  font-family: Montserrat, sans-serif;
   color: inherit;
 }
 </style>

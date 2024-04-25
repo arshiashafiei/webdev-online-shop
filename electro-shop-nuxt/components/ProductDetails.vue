@@ -52,10 +52,6 @@
     }
   }
   
-  .product-description__nav-link {
-    font-family: Montserrat, sans-serif;
-  }
-  
   .product-description__nav-link--active {
     color: var(--Primary-500, #1c4e8e);
     font-weight: 700;

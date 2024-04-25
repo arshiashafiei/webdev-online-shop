@@ -388,10 +388,6 @@ export default {
   margin: auto 0;
 }
 
-.rating-text {
-  font-family: Montserrat, sans-serif;
-}
-
 .price {
   color: var(--Dark-500, #101316);
   margin-top: 18px;
@@ -506,7 +502,6 @@ export default {
 }
 
 .quantity-value {
-  font-family: Montserrat, sans-serif;
   border-color: rgba(165, 169, 172, 0.2);
   border-style: solid;
   border-top-width: 1px;

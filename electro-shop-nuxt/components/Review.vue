@@ -83,7 +83,6 @@
 }
 
 .reviewer-name {
-  font-family: Montserrat, sans-serif;
   margin: 0;
 }
 
@@ -95,7 +94,6 @@
 }
 
 .review-title {
-  font-family: Montserrat, sans-serif;
   font-weight: 700;
   margin: 10px 0 0;
   width: 100%;
@@ -108,7 +106,6 @@
 }
 
 .review-content {
-  font-family: Montserrat, sans-serif;
   width: 100%;
   margin: 0;
 }

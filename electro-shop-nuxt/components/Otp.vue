@@ -44,7 +44,6 @@
 .otp-description {
     margin-top: 5px;
     color: var(--Gray-500, #a5a9ac);
-    font-family: Montserrat, sans-serif;
     font-weight: 400;
 }
 
@@ -65,7 +64,6 @@
     width: 60px;
     height: 60px;
     padding: 12px;
-    font-family: Montserrat, sans-serif;
     border: 1px solid rgba(28, 78, 142, 1);
     border-radius: 10px;
     text-align: center;
@@ -78,7 +76,6 @@
     width: 100%;
     margin-top: 30px;
     padding: 13px 20px;
-    font-family: Montserrat, sans-serif;
     font-weight: 400;
     color: var(--White-500, #fff);
     background-color: var(--Primary-500, #1c4e8e);

@@ -189,13 +189,11 @@
 }
 
 .title {
-  font-family: Montserrat, sans-serif;
   font-weight: 700;
   margin-bottom: 10px;
 }
 
 .link {
-  font-family: Montserrat, sans-serif;
   margin-top: 10px;
   color: #fff;
   text-decoration: none;
@@ -207,12 +205,11 @@
 }
 
 .description {
-  font-family: Montserrat, sans-serif;
   margin-top: 10px;
 }
 
 .subscribe-form {
-  background-color: var(--gray-gray-10, rgba(165, 169, 172, 0.1));
+  background-color: rgba(165, 169, 172, 0.1);
   border-radius: 10px;
   padding: 13px 16px;
   margin-top: 10px;
@@ -239,14 +236,13 @@
 }
 
 .email-input {
-  font-family: Montserrat, sans-serif;
   border: none;
   background: transparent;
-  color: var(--White-500, #fff);
+  color: #fff;
 }
 
 .email-input::placeholder {
-  color: var(--White-500, #fff);
+  color: #fff;
   opacity: 1;
 }
 

@@ -5,3 +5,12 @@
 .black-color {
     color: black !important;
 }
+
+body {
+    font-family: Montserrat;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(/Montserrat.ttf);
+}

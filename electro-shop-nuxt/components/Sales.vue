@@ -110,10 +110,6 @@
   line-height: 30px;
 }
 
-.product-card-cta-text {
-  font-family: Montserrat, sans-serif;
-}
-
 .product-card-cta-icon {
   width: 24px;
   aspect-ratio: 1;

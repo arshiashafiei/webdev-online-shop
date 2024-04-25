@@ -47,7 +47,6 @@
   }
   
   .nav-link {
-    font-family: Montserrat, sans-serif;
     text-decoration: none;
     color: inherit;
   }
@@ -100,7 +99,6 @@
   
   .label,
   .value {
-    font-family: Montserrat, sans-serif;
     margin-top: 6px;
   }
   

@@ -105,7 +105,6 @@ export default {
 }
 
 .product-name {
-  font-family: Montserrat, sans-serif;
   font-weight: 700;
   line-height: 42px;
   width: 310px;
@@ -113,7 +112,6 @@ export default {
 }
 
 .product-price {
-  font-family: Montserrat, sans-serif;
   font-weight: 400;
   line-height: 140%;
 }
