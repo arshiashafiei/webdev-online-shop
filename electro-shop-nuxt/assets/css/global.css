@@ -1,0 +1,16 @@
+.gray-background {
+    background-color: #f6f6f7;
+}
+
+.black-color {
+    color: black !important;
+}
+
+body {
+    font-family: Montserrat;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(/Montserrat.ttf);
+}

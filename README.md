@@ -3,6 +3,7 @@
 ## Project Setup
 
 ```sh
+cd electro-shop-nuxt
 npm install
 ```
 
