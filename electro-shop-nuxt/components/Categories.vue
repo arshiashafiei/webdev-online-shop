@@ -18,7 +18,7 @@
         <b-col cols="12" md="4" lg="2" v-for="item in items" :key="item">
           <div class="d-flex flex-column align-items-center justify-content-center">
             <div class="category-image-wrapper d-flex justify-content-center">
-              <b-img fluid :src="item.image" alt="Product image" class="p-3" />
+              <b-img fluid :src="item.image_url" alt="Product image" class="p-3" />
             </div>
           </div>
           <div class="category-name mt-3 mb-3">{{ item.name }}</div>
@@ -58,6 +58,15 @@
           }
         ]
       }
+    },
+    methods: {
+      async get_categories() {
+        const res = await this.$axios.$get('/api/categories/')
+        this.items = res.results
+      }
+    },
+    mounted() {
+      this.get_categories()
     }
   }
 </script>

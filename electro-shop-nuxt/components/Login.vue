@@ -7,9 +7,9 @@
         <p class="login-description">Please login here</p>
         <form class="login-form">
           <label for="email" class="input-label">Email Address</label>
-          <b-form-input class="mb-2" id="email" type="email" placeholder="Email" size="lg"></b-form-input>
+          <b-form-input v-model="username" class="mb-2" id="email" type="email" placeholder="Email" size="md"></b-form-input>
           <label for="password" class="input-label">Password</label>
-          <b-form-input class="mb-2" id="password" type="password" placeholder="Password" size="lg"></b-form-input>
+          <b-form-input v-model="password" class="mb-2" id="password" type="password" placeholder="Password" size="md"></b-form-input>
           <div class="form-options">
             <div class="remember-me">
               <b-form-checkbox class="mt-2" id="checkbox">
@@ -19,7 +19,7 @@
             <a href="#" class="forgot-password mt-2" v-b-modal.otp-modal>Forgot Password?</a>
           </div>
           <div class="d-flex flex-column">
-            <button type="submit" class="login-button">Login</button>
+            <button type="button" @click="login" class="login-button">Login</button>
             <Register />
           </div>
         </form>
@@ -40,9 +40,36 @@
         </div>
       </div>
     </b-modal>
-    <b-button v-b-modal.login-modal class="login-button-navbar">Login</b-button>
+    <b-button v-if="!$store.state.isAuthenticated" v-b-modal.login-modal class="login-button-navbar">Login</b-button>
   </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      username: "",
+      password: ""
+    }
+  },
+  methods: {
+    async login() {
+      try {
+        const res = await this.$axios.post('/api/login/', {
+          username: this.username,
+          password: this.password
+        });
+        if (res.status === 200) {
+          this.$store.dispatch('checkAuth')
+          this.$bvModal.hide('login-modal')
+        }
+      } catch (error) {
+        console.error('Authentication error:', error);
+      }
+    },
+  }
+}
+</script>
 
 <style scoped>
 .login-button-navbar {
