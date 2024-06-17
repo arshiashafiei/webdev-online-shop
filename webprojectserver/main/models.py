@@ -9,7 +9,7 @@ class Category(models.Model):
         "self", on_delete=models.CASCADE, null=True, blank=True, related_name="children"
     )
     image_url = models.URLField(default="")
-    depth = models.IntegerField(default=0)
+    depth = models.IntegerField(default=0, validators=[MinValueValidator(0), MaxValueValidator(5)])
 
     def __str__(self):
         return self.name
