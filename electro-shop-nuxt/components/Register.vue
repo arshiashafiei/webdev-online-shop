@@ -6,11 +6,11 @@
         <p class="login-description">Please enter details</p>
         <form class="login-form">
           <label for="name" class="input-label">Name</label>
-          <b-form-input class="mb-2" id="name" type="text" placeholder="Name" size="lg"></b-form-input>
+          <b-form-input v-model="user_data.name" class="mb-2" id="name" type="text" placeholder="Name" size="lg"></b-form-input>
           <label for="email" class="input-label">Email Address</label>
-          <b-form-input class="mb-2" id="email" type="email" placeholder="Email" size="lg"></b-form-input>
+          <b-form-input v-model="user_data.email" class="mb-2" id="email" type="email" placeholder="Email" size="lg"></b-form-input>
           <label for="password" class="input-label">Password</label>
-          <b-form-input class="mb-2" id="password" type="password" placeholder="Password" size="lg"></b-form-input>
+          <b-form-input v-model="user_data.password" class="mb-2" id="password" type="password" placeholder="Password" size="lg"></b-form-input>
           <div class="form-options">
             <div class="remember-me">
               <b-form-checkbox class="mt-2" id="checkbox2">
@@ -18,7 +18,7 @@
               </b-form-checkbox>
             </div>
           </div>
-          <button type="submit" class="register-button">Register</button>
+          <button type="button" @click="register_user" class="register-button">Register</button>
         </form>
         <div class="separator">
           <hr class="separator-line" />
@@ -40,6 +40,36 @@
     <b-button v-b-modal.register-modal class="register-button-login w-100">Register</b-button>
   </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      user_data: {
+        name: "",
+        first_name: "",
+        last_name: "",
+        email: "",
+        password: "",
+        username: "",
+      }
+    }
+  },
+  methods: {
+    async register_user() {
+      this.user_data.username = this.user_data.email
+      this.user_data.first_name = this.user_data.name
+      this.user_data.last_name = this.user_data.name
+      const res = await this.$axios.$post('/api/register/', this.user_data)
+      if (res.status === 201) {
+          console.log("here")
+          this.$bvModal.hide('register-modal')
+      }
+    }
+  }
+}
+</script>
+
 
 <style scoped>
 .register-button-login {

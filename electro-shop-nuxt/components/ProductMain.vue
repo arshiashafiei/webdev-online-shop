@@ -4,44 +4,17 @@
       <div class="main-image">
         <div class="image-container">
           <img
-            src="/product-photo.png"
+            :src="product_data.image_url"
             alt="Apple iPhone 14 Pro main image"
             class="img-main"
           />
         </div>
         <div class="thumbnail-images">
-          <div class="thumbnail">
+          <div v-for="image in product_data.images" :key="image" class="thumbnail">
             <div class="thumbnail-container">
               <img
-                src="/product-photo.png"
+                :src="image"
                 alt="Apple iPhone 14 Pro thumbnail 1"
-                class="img-thumbnail"
-              />
-            </div>
-          </div>
-          <div class="thumbnail">
-            <div class="thumbnail-container">
-              <img
-                src="/product-photo.png"
-                alt="Apple iPhone 14 Pro thumbnail 2"
-                class="img-thumbnail"
-              />
-            </div>
-          </div>
-          <div class="thumbnail">
-            <div class="thumbnail-container">
-              <img
-                src="/product-photo.png"
-                alt="Apple iPhone 14 Pro thumbnail 3"
-                class="img-thumbnail"
-              />
-            </div>
-          </div>
-          <div class="thumbnail">
-            <div class="thumbnail-container">
-              <img
-                src="/product-photo.png"
-                alt="Apple iPhone 14 Pro thumbnail 4"
                 class="img-thumbnail"
               />
             </div>
@@ -52,7 +25,7 @@
     <div class="product-info">
       <div class="info-container">
         <div class="title-stock">
-          <h1 class="product-title">Apple iPhone 14 Pro</h1>
+          <h1 class="product-title">{{ product_data.name }}</h1>
           <div class="stock-status">In Stock</div>
         </div>
         <div class="rating">
@@ -67,9 +40,7 @@
         </div>
         <div class="price">${{ product_pricing[selected_color] }}</div>
         <div class="description">
-          It is a long established fact that a reader will be distracted by the
-          readable content of a page when looking at its layout. The point of
-          using Lorem Ipsum is that it has a more-or-less normal distribution.
+          {{ product_data.description }}
         </div>
         <div class="color-label">Color</div>
         <div class="color-options">
@@ -176,16 +147,24 @@
 
 <script>
 export default {
+  props: {
+    product_data: Object
+  },
   data() {
     return {
-      product_pricing: {
-        color_1: 100,
-        color_2: 120,
-        color_3: 130,
-        color_4: 150,
-      },
       selected_color: "color_1",
+      product_data: {}
     };
+  },
+  computed: {
+    product_pricing() {
+      return {
+        color_1: this.product_data.price,
+        color_2: 520,
+        color_3: 530,
+        color_4: 550,
+      }
+    }
   },
   methods: {
     add_to_cart() {
@@ -260,7 +239,6 @@ export default {
 }
 
 .img-main {
-  aspect-ratio: 0.83;
   object-fit: auto;
   object-position: center;
   width: 346px;
@@ -309,7 +287,6 @@ export default {
 }
 
 .img-thumbnail {
-  aspect-ratio: 0.83;
   object-fit: auto;
   object-position: center;
   width: 71px;
@@ -380,7 +357,6 @@ export default {
 }
 
 .rating-stars {
-  aspect-ratio: 5;
   object-fit: auto;
   object-position: center;
   width: 120px;
@@ -487,7 +463,6 @@ export default {
 }
 
 .quantity-icon {
-  aspect-ratio: 0.71;
   object-fit: auto;
   object-position: center;
   width: 40px;
@@ -557,7 +532,6 @@ export default {
 }
 
 .wishlist-img {
-  aspect-ratio: 1;
   object-fit: auto;
   object-position: center;
   width: 24px;
@@ -594,7 +568,6 @@ export default {
 }
 
 .share-img {
-  aspect-ratio: 1;
   object-fit: auto;
   object-position: center;
   width: 24px;
