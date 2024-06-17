@@ -61,6 +61,10 @@ export default {
       this.user_data.first_name = this.user_data.name
       this.user_data.last_name = this.user_data.name
       const res = await this.$axios.$post('/api/register/', this.user_data)
+      if (res.status === 201) {
+          console.log("here")
+          this.$bvModal.hide('register-modal')
+      }
     }
   }
 }

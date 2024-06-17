@@ -1,7 +1,7 @@
 from rest_framework import serializers
 from django.contrib.auth.models import User
 
-from main.models import CartItem, Category, DiscountCode, Product, ShoppingCart
+from main.models import CartItem, Category, DiscountCode, Product, ShoppingCart, ProductPriceHistory
 
 
 class CategorySerializer(serializers.ModelSerializer):
@@ -15,6 +15,12 @@ class ProductSerializer(serializers.ModelSerializer):
         model = Product
         fields = "__all__"
         depth = 1
+
+
+class ProductPriceHistorySerializer(serializers.ModelSerializer):
+    class Meta:
+        model = ProductPriceHistory
+        fields = "__all__"
 
 
 class DiscountCodeSerializer(serializers.ModelSerializer):

@@ -1,16 +1,24 @@
 from rest_framework import viewsets, status
 
-from .models import Category, DiscountCode, Product, ShoppingCart
+from .models import Category, DiscountCode, Product, ShoppingCart, ProductPriceHistory
 from .serializers import (
     CategorySerializer,
     DiscountCodeSerializer,
     ProductSerializer,
     ShoppingCartSerializer,
     UserRegistrationSerializer,
+    ProductPriceHistorySerializer,
 )
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from django.contrib.auth import authenticate, login
+
+
+class ProductPriceHistoryViewSet(viewsets.ModelViewSet):
+    permission_classes = []
+    authentication_classes = []
+    queryset = ProductPriceHistory.objects.all()
+    serializer_class = ProductPriceHistorySerializer
 
 
 class ProductViewSet(viewsets.ModelViewSet):

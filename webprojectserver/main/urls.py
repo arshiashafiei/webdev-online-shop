@@ -6,6 +6,7 @@ from .views import (
     DiscountCodeViewSet,
     ProductViewSet,
     ShoppingCartViewSet,
+    ProductPriceHistoryViewSet,
     UserRegistrationAPIView,
     LoginView,
     CheckAuthView
@@ -16,6 +17,7 @@ router.register(r"products", ProductViewSet)
 router.register(r"categories", CategoryViewSet)
 router.register(r"discountcodes", DiscountCodeViewSet)
 router.register(r"shoppingcarts", ShoppingCartViewSet)
+router.register(r"pricehistory", ProductPriceHistoryViewSet)
 
 urlpatterns = [
     path("", include(router.urls)),
