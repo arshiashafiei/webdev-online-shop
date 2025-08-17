@@ -34,11 +34,22 @@ export default {
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
   ],
+  axios: {
+    baseURL: process.env.NODE_BASE_URL,
+    credentials: true,
+  },
+
+  publicRuntimeConfig: {
+    axios: {
+      baseURL: process.env.NODE_BASE_URL
+    }
+  },
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/bootstrap
     'bootstrap-vue/nuxt',
+    '@nuxtjs/axios'
   ],
   bootstrapVue: {
     icons: true

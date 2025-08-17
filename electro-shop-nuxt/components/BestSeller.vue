@@ -37,20 +37,22 @@
         <b-col cols="12" lg="8">
           <b-row>
             <b-col cols="12" md="6" lg="4" v-for="item in items" :key="item">
-              <div class="d-flex flex-column mb-4">
-                <div class="gray-background d-flex justify-content-center">
-                  <b-img fluid :src="item.image" alt="Product image" />
+              <nuxt-link :to="`/product/${item.id}`">
+                <div class="d-flex flex-column mb-4">
+                  <div class="gray-background d-flex justify-content-center">
+                    <b-img fluid :src="item.image_url" alt="Product image" />
+                  </div>
                 </div>
-              </div>
-              <div class="product-name">{{ item.name }}</div>
-              <div>
-                <b-icon icon="star-fill" class="star-icon"></b-icon>
-                <b-icon icon="star-fill" class="star-icon"></b-icon>
-                <b-icon icon="star-fill" class="star-icon"></b-icon>
-                <b-icon icon="star-fill" class="star-icon"></b-icon>
-                <b-icon icon="star" class="star-icon"></b-icon>
-              </div>
-              <div class="product-price mb-3">${{ item.price }}</div>
+                <div class="product-name">{{ item.name }}</div>
+                <div>
+                  <b-icon icon="star-fill" class="star-icon"></b-icon>
+                  <b-icon icon="star-fill" class="star-icon"></b-icon>
+                  <b-icon icon="star-fill" class="star-icon"></b-icon>
+                  <b-icon icon="star-fill" class="star-icon"></b-icon>
+                  <b-icon icon="star" class="star-icon"></b-icon>
+                </div>
+                <div class="product-price mb-3">${{ item.price }}</div>
+              </nuxt-link>
             </b-col>
           </b-row>
         </b-col>
@@ -95,6 +97,15 @@
           }
         ]
       }
+    },
+    methods: {
+      async get_products() {
+        const res = await this.$axios.$get('/api/products/')
+        this.items = res.results
+      }
+    },
+    mounted() {
+      this.get_products()
     }
   }
 </script>
